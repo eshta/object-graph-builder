@@ -37,16 +37,16 @@ Prepare for development
 
 A Python 3.5+ interpreter is required in addition to pipenv.
 
-.. code-block:: shell
 
-    $ pipenv install --python 3.7 --dev
+
+    $ pipenv install --python 3.5 --dev
     $ pipenv shell
     $ pip install -e .
 
 
 Now you're ready to run the tests:
 
-.. code-block:: shell
+
 
     $ make test
 
