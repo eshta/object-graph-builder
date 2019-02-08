@@ -22,7 +22,7 @@ class ObjectGraphBuilder(object):
         else:
             return self.object_graph
 
-    def add_class(self, class_definition):
+    def add_class(self, class_definition) -> None:
         self.classes.append(class_definition)
         self.taint()
 
@@ -30,24 +30,24 @@ class ObjectGraphBuilder(object):
         self.classes += class_definitions
         self.taint()
 
-    def add_module(self, module):
+    def add_module(self, module) -> None:
         self.modules.append(module)
         self.taint()
 
-    def add_modules(self, modules: List):
+    def add_modules(self, modules: List) -> None:
         self.modules += modules
         self.taint()
 
-    def add_binding_spec(self, binding_spec: pinject.BindingSpec):
+    def add_binding_spec(self, binding_spec: pinject.BindingSpec) -> None:
         self.binding_specs.append(binding_spec)
         self.taint()
 
-    def add_binding_specs(self, binding_specs: List[pinject.BindingSpec]):
+    def add_binding_specs(self, binding_specs: List[pinject.BindingSpec]) -> None:
         self.binding_specs += binding_specs
         self.taint()
 
-    def taint(self):
+    def taint(self) -> None:
         self.tainted = True
 
-    def clean(self):
+    def clean(self) -> None:
         self.tainted = False
