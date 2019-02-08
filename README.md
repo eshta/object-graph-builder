@@ -1,20 +1,10 @@
 django-pinject
 ==============
 
-.. image:: https://img.shields.io/pypi/v/django-pinject.svg
-   :target: https://pypi.org/project/django-pinject/
-   :alt: Latest Version
+[![codecov.io](http://codecov.io/github/eshta/django-pinject/coverage.svg?branch=master)](http://codecov.io/github/eshta/django-pinject?branch=master)
 
-.. image:: https://codecov.io/gh/eshta/django-pinject/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/eshta/django-pinject
-   :alt: Coverage Status
+[![Build Status](https://travis-ci.com/eshta/django-pinject.svg?branch=master)](https://travis-ci.com/eshta/django-pinject)
 
-.. image:: https://readthedocs.org/projects/django-pinject/badge/?version=latest
-   :target: https://django-pinject.readthedocs.io/en/stable/?badge=latest
-   :alt: Documentation Status
-
-.. image:: https://travis-ci.org/eshta/django-pinject.svg?branch=master
-   :target: https://travis-ci.org/eshta/django-pinject
 
 
 This simplifies pinject (dependency injection container) integration into django
