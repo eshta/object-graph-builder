@@ -13,11 +13,11 @@ sphinx = "*"
 sphinx-rtd-theme = "*"
 pytest-pycodestyle = "*"
 mypy = "*"
+pytest-mypy = "*"
 
 [packages]
 django = "*"
 pinject = "*"
 
-
 [requires]
-python_version = "3.6"
+python_version = "3.7"
