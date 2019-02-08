@@ -9,13 +9,6 @@ Contents:
    usage
    changelog
 
-Api documentation:
-
-.. toctree::
-   :maxdepth: 2
-
-   api/modules
-
 
 Indices and tables
 ==================
