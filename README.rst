@@ -1,9 +1,20 @@
 django-pinject
 ==============
 
-[![codecov.io](http://codecov.io/github/eshta/django-pinject/coverage.svg?branch=master)](http://codecov.io/github/eshta/django-pinject?branch=master)
+.. image:: https://img.shields.io/pypi/v/django-pinject.svg
+   :target: https://pypi.org/project/django-pinject/
+   :alt: Latest Version
 
-[![Build Status](https://travis-ci.com/eshta/django-pinject.svg?branch=master)](https://travis-ci.com/eshta/django-pinject)
+.. image:: https://codecov.io/gh/eshta/django-pinject/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/eshta/django-pinject
+   :alt: Coverage Status
+
+.. image:: https://readthedocs.org/projects/django-pinject/badge/?version=latest
+   :target: https://django-pinject.readthedocs.io/en/stable/?badge=latest
+   :alt: Documentation Status
+
+.. image:: https://travis-ci.org/eshta/django-pinject.svg?branch=master
+   :target: https://travis-ci.org/eshta/django-pinject
 
 
 
@@ -20,7 +31,7 @@ Features
 Requirements
 ------------
 
-django-pinject supports Python 3.6+ 
+django-pinject supports Python 3.5+ 
 
 Prepare for development
 -----------------------
@@ -29,7 +40,7 @@ A Python 3.5+ interpreter is required in addition to pipenv.
 
 
 
-    $ pipenv install --python 3.6 --dev
+    $ pipenv install --python 3.5 --dev
     $ pipenv shell
     $ pip install -e .
 
