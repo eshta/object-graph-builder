@@ -30,7 +30,7 @@ Features
 Requirements
 ------------
 
-django-pinject supports Python 3.5+ 
+django-pinject supports Python 3.6+ 
 
 Prepare for development
 -----------------------
@@ -39,7 +39,7 @@ A Python 3.5+ interpreter is required in addition to pipenv.
 
 
 
-    $ pipenv install --python 3.5 --dev
+    $ pipenv install --python 3.6 --dev
     $ pipenv shell
     $ pip install -e .
 
