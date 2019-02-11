@@ -12,3 +12,4 @@ script: make travis
 
 after_success:
   - codecov
+
