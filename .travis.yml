@@ -8,7 +8,7 @@ install:
   - pipenv install --dev
   - pipenv run pip install -e .
 
-script: pipenv run py.test --cov
+script: make test
 
 after_success:
   - codecov

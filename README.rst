@@ -17,6 +17,7 @@ django-pinject
    :target: https://travis-ci.org/eshta/django-pinject
 
 
+
 This simplifies pinject (dependency injection container) integration into django
 
 
@@ -30,23 +31,23 @@ Features
 Requirements
 ------------
 
-django-pinject supports Python 3.5+ 
+django-pinject supports Python 3.6+
 
 Prepare for development
 -----------------------
 
 A Python 3.5+ interpreter is required in addition to pipenv.
 
-.. code-block:: shell
 
-    $ pipenv install --python 3.7 --dev
+
+    $ pipenv install --python 3.6 --dev
     $ pipenv shell
     $ pip install -e .
 
 
 Now you're ready to run the tests:
 
-.. code-block:: shell
+
 
     $ make test
 
