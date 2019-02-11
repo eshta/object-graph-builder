@@ -5,8 +5,8 @@ django-pinject
    :target: https://pypi.org/project/django-pinject/
    :alt: Latest Version
 
-.. image:: https://codecov.io/gh/eshta/django-pinject/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/eshta/django-pinject
+.. image:: https://coveralls.io/repos/github/eshta/django-pinject/badge.svg
+   :target: https://coveralls.io/github/eshta/django-pinject
    :alt: Coverage Status
 
 .. image:: https://readthedocs.org/projects/django-pinject/badge/?version=latest

@@ -16,7 +16,7 @@ build:
 	pipenv run mypy -m django_pinject -m tests
 
 travis: build
-	pipenv run py.test --cov=codecov
+	pipenv run py.test --cov
 
 cov: test
 	pipenv run coverage html
