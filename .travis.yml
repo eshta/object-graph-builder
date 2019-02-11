@@ -8,7 +8,7 @@ install:
   - pipenv install --dev
   - pipenv run pip install -e .
 
-script: make test
+script: make travis
 
 after_success:
   - codecov

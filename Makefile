@@ -12,6 +12,12 @@ clean:
 test:
 	pipenv run py.test --cov
 
+build:
+	pipenv run mypy -m django_pinject -m tests
+
+travis: build
+	pipenv run py.test --cov=codecov
+
 cov: test
 	pipenv run coverage html
 	@echo open htmlcov/index.html
