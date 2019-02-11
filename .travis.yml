@@ -4,11 +4,12 @@ python:
   - "3.6"
 
 install:
-  - pip install pipenv codecov
+  - pip install pipenv python-coveralls
   - pipenv install --dev
   - pipenv run pip install -e .
 
-script: make test
+script: make travis
 
 after_success:
-  - codecov
+  - coveralls
+
