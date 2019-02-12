@@ -25,7 +25,7 @@ Features
 --------
 
 * Offering a builder so you can dynamically build the object graph with many apps adding their specs, classes, modules
-* Dependency Injection Container (pinject)[https://github.com/google/pinject]
+* Dependency Injection Container (`pinject <https://github.com/google/pinject>`_)
 
 
 Requirements
@@ -36,7 +36,7 @@ django-pinject supports Python 3.6+
 Prepare for development
 -----------------------
 
-A Python 3.5+ interpreter is required in addition to pipenv.
+A Python 3.6+ interpreter is required in addition to pipenv.
 
 
 
