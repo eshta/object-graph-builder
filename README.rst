@@ -18,20 +18,19 @@ django-pinject
 
 
 
-This simplifies pinject (dependency injection container) integration into django
-
+Provides a multi-step dependency injection container builder to allow adding/recreating object graphs in different stages through an app lifecycle
 
 Features
 --------
 
-* Offering a builder so you can dynamically build the object graph with many apps adding their specs, classes, modules
+* Offering a container builder, so one can dynamically build the object graph with many apps adding their specs, classes, modules
 * Dependency Injection Container (`pinject <https://github.com/google/pinject>`_)
 
 
 Requirements
 ------------
 
-django-pinject supports Python 3.6+
+* Python 3.6+
 
 Prepare for development
 -----------------------

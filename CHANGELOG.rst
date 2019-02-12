@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0.0 [Initial Release]
+1.0.0
 -----------------------
 
 
-* Offering a builder so you can dynamically build the object graph with many apps adding their specs, classes, modules
-* Dependency Injection Container (`pinject <https://github.com/google/pinject>`_)
+* Offering a container builder, so one can dynamically build the object graph with many apps adding their specs, classes, modules
 
 
