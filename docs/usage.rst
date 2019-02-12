@@ -37,7 +37,6 @@ in apps.App2Config.ready()
 .. code-block:: python
 
   from config.settings import object_graph_builder
-  import pinject
 
 
   object_graph_builder.addModules([app2.module1, app2.module2])
