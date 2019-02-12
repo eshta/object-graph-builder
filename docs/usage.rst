@@ -25,7 +25,7 @@ in each app and add the configurations you need
 	   def configure(self, bind):
 		   bind('long_name2', to_class=SomeReallyLongClassName2)
 
-  object_graph_builder.addModules([module1, module2]) # which you have imported
+  object_graph_builder.addModules([app2.module1, app2.module2]) # which you have imported
   object_graph_builder.addBindingSpec(BindingSpec1)
 
   # client
