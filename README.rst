@@ -10,7 +10,7 @@ django-pinject
    :alt: Coverage Status
 
 .. image:: https://readthedocs.org/projects/django-pinject/badge/?version=latest
-   :target: https://django-pinject.readthedocs.io/en/stable/?badge=latest
+   :target: https://django-pinject.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
 .. image:: https://travis-ci.org/eshta/django-pinject.svg?branch=master
