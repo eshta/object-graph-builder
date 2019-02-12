@@ -1,7 +1,7 @@
 Usage
 =====
 
-You can define the builder in your settings.py and then import it
+One can define the builder in your settings.py and then import it
 in each app and add the configurations you need
 
 **In settings.py**
@@ -13,9 +13,8 @@ in each app and add the configurations you need
   object_graph_builder = ObjectGraphBuilder()
 
 
-App 1
+**App 1** in apps.App1Config.ready()
 
-in apps.App1Config.ready()
 .. code-block:: python
 
   from config.settings import object_graph_builder
@@ -30,7 +29,7 @@ in apps.App1Config.ready()
 	   def configure(self, bind):
 		   bind('long_name', to_class=SomeReallyLongClassName)
 
-  object_graph_builder.addBindingSpec(BindingSpec1)
+  object_graph_builder.addBindingSpec(MyBindingSpec)
 
 **App 2**
 in apps.App2Config.ready()
@@ -41,13 +40,7 @@ in apps.App2Config.ready()
   import pinject
 
 
-  class MyBindingSpec2(pinject.BindingSpec):
-	   def configure(self, bind):
-		   bind('long_name2', to_class=SomeReallyLongClassName2)
-
-  object_graph_builder.addModules([app2.module1, app2.module2]) # which you have imported
-  object_graph_builder.addBindingSpec(BindingSpec1)
-
+  object_graph_builder.addModules([app2.module1, app2.module2])
 
 **Client**
 
