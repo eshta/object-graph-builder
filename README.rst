@@ -1,5 +1,5 @@
-django-pinject
-==============
+object-graph-builder
+====================
 
 .. image:: https://img.shields.io/pypi/v/django-pinject.svg
    :target: https://pypi.org/project/django-pinject/
@@ -18,7 +18,7 @@ django-pinject
 
 
 
-Provides a multi-step dependency injection container builder to allow adding/recreating object graphs in different stages through an app lifecycle
+Provides a multi-step dependency injection container builder to allow adding/recreating object graphs in different stages through an app life-cycle
 
 Features
 --------
@@ -40,7 +40,9 @@ A Python 3.6+ interpreter is required in addition to pipenv.
 
 
     $ pipenv install --python 3.6 --dev
+
     $ pipenv shell
+
     $ pip install -e .
 
 
