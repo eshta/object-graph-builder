@@ -15,7 +15,7 @@ with open(os.path.join(BASE_DIR, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='django-pinject',
     version=VERSION,
-    description='Integrate pinject dependency injection container into Django.',
+    description='Provides an interface to build, the dependency injection container.',
     long_description=long_description,
     url='https://github.com/eshta/django-pinject',
     project_urls={
@@ -27,13 +27,12 @@ setup(
     packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=['pinject'],
     include_package_data=True,
-    keywords='django pinject',
+    keywords='django pinject dependency-injection di',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
     ],
 )
