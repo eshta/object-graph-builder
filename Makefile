@@ -5,6 +5,9 @@ VERSION = $(shell pipenv run python -c "print(__import__('django_pinject').__ver
 install-deps:
 	pipenv install
 
+install-dev:
+	pipenv install --dev
+
 clean:
 	rm -fr docs/_build build/ dist/
 	pipenv run make -C docs clean
