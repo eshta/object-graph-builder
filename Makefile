@@ -1,6 +1,6 @@
 .PHONY: clean tests cov docs release
 
-VERSION = $(shell pipenv run python -c "print(__import__('django_pinject').__version__)")
+VERSION = $(shell pipenv run python -c "print(__import__('object_graph').__version__)")
 
 install-deps:
 	pipenv install
@@ -16,7 +16,7 @@ test:
 	pipenv run py.test --cov
 
 build:
-	pipenv run mypy -m django_pinject -m tests
+	pipenv run mypy -m object_graph -m tests
 
 travis: build
 	pipenv run py.test --cov

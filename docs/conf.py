@@ -22,7 +22,7 @@ extensions = [
 
 def linkcode_resolve(domain, info):
     """Link source code to GitHub."""
-    project = 'django-pinject'
+    project = 'object-graph-builder'
     github_user = '0mars'
     head = 'master'
 
@@ -57,7 +57,7 @@ source_suffix = '.rst'
 
 master_doc = 'index'
 
-project = 'django-pinject'
+project = 'object-graph-builder'
 copyright = '%s, Omar Shaban' % year
 
 exclude_patterns = ['_build']
