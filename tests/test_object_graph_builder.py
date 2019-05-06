@@ -5,7 +5,7 @@ from pinject import BindingSpec
 from pinject.object_graph import ObjectGraph
 from pinject.object_providers import ObjectProvider
 
-from django_pinject.builder import ObjectGraphBuilder
+from object_graph.builder import ObjectGraphBuilder
 
 
 class BindingSpec1(BindingSpec):
@@ -23,7 +23,7 @@ class TestObjectGraphBuilder:
         builder = ObjectGraphBuilder()
         assert isinstance(builder.get_object_graph(), ObjectGraph)
 
-    @patch('django_pinject.builder.pinject.new_object_graph')
+    @patch('object_graph.builder.pinject.new_object_graph')
     def test_add_class(self, mocked_object_graph_method):
         builder = ObjectGraphBuilder()
         class_to_add = TestObjectGraphBuilder
@@ -32,7 +32,7 @@ class TestObjectGraphBuilder:
 
         mocked_object_graph_method.assert_called_once_with(binding_specs=[], classes=[class_to_add], modules=[])
 
-    @patch('django_pinject.builder.pinject.new_object_graph')
+    @patch('object_graph.builder.pinject.new_object_graph')
     def test_add_classes(self, mocked_object_graph_method):
         builder = ObjectGraphBuilder()
         classes = [TestObjectGraphBuilder, ObjectProvider]
@@ -41,7 +41,7 @@ class TestObjectGraphBuilder:
 
         mocked_object_graph_method.assert_called_once_with(binding_specs=[], classes=classes, modules=[])
 
-    @patch('django_pinject.builder.pinject.new_object_graph')
+    @patch('object_graph.builder.pinject.new_object_graph')
     def test_add_module(self, mocked_object_graph_method):
         builder = ObjectGraphBuilder()
         module_to_add = pinject
@@ -50,7 +50,7 @@ class TestObjectGraphBuilder:
 
         mocked_object_graph_method.assert_called_once_with(binding_specs=[], classes=[], modules=[module_to_add])
 
-    @patch('django_pinject.builder.pinject.new_object_graph')
+    @patch('object_graph.builder.pinject.new_object_graph')
     def test_add_modules(self, mocked_object_graph_method):
         builder = ObjectGraphBuilder()
         modules_to_add = [pinject.decorators, pinject.bindings]
@@ -59,7 +59,7 @@ class TestObjectGraphBuilder:
 
         mocked_object_graph_method.assert_called_once_with(binding_specs=[], classes=[], modules=modules_to_add)
 
-    @patch('django_pinject.builder.pinject.new_object_graph')
+    @patch('object_graph.builder.pinject.new_object_graph')
     def test_add_binding_spec(self, mocked_object_graph_method):
         builder = ObjectGraphBuilder()
         binding_spec_to_add = BindingSpec1
@@ -68,7 +68,7 @@ class TestObjectGraphBuilder:
 
         mocked_object_graph_method.assert_called_once_with(binding_specs=[binding_spec_to_add], classes=[], modules=[])
 
-    @patch('django_pinject.builder.pinject.new_object_graph')
+    @patch('object_graph.builder.pinject.new_object_graph')
     def test_add_binding_specs(self, mocked_object_graph_method):
         builder = ObjectGraphBuilder()
         binding_specs_to_add = [BindingSpec1, BindingSpec2]

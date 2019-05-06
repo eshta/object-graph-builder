@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-VERSION = __import__('django_pinject').__version__
+VERSION = __import__('object_graph').__version__
 
 
 with open(os.path.join(BASE_DIR, 'README.rst'), encoding='utf-8') as f:
@@ -13,24 +13,22 @@ with open(os.path.join(BASE_DIR, 'README.rst'), encoding='utf-8') as f:
 
 
 setup(
-    name='django-pinject',
+    name='object-graph-builder',
     version=VERSION,
-    description='Provides an interface to build, the dependency injection container.',
+    description='Provides an interface to build the dependency injection container.',
     long_description=long_description,
-    url='https://github.com/eshta/django-pinject',
+    url='https://github.com/eshta/object-graph-builder',
     project_urls={
-        'Bug Reports': 'https://github.com/eshta/django-pinject/issues',
-        'Source': 'https://github.com/eshta/django-pinject',
+        'Bug Reports': 'https://github.com/eshta/object-graph-builder/issues',
+        'Source': 'https://github.com/eshta/object-graph-builder',
     },
     author='Omar Shaban',
     author_email='o.shaban.000@gmail.com',
     packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=['pinject'],
     include_package_data=True,
-    keywords='django pinject dependency-injection di',
+    keywords='django pinject dependency-injection di container builder',
     classifiers=[
-        'Environment :: Web Environment',
-        'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',

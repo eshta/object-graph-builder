@@ -1,24 +1,24 @@
-django-pinject
-==============
+object-graph-builder
+====================
 
-.. image:: https://img.shields.io/pypi/v/django-pinject.svg
-   :target: https://pypi.org/project/django-pinject/
+.. image:: https://img.shields.io/pypi/v/object-graph-builder.svg
+   :target: https://pypi.org/project/object-graph-builder/
    :alt: Latest Version
 
-.. image:: https://coveralls.io/repos/github/eshta/django-pinject/badge.svg
-   :target: https://coveralls.io/github/eshta/django-pinject
+.. image:: https://coveralls.io/repos/github/eshta/object-graph-builder/badge.svg
+   :target: https://coveralls.io/github/eshta/object-graph-builder
    :alt: Coverage Status
 
-.. image:: https://readthedocs.org/projects/django-pinject/badge/?version=latest
-   :target: https://django-pinject.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/object-graph-builder/badge/?version=latest
+   :target: https://object-graph-builder.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
 
-.. image:: https://travis-ci.org/eshta/django-pinject.svg?branch=master
-   :target: https://travis-ci.org/eshta/django-pinject
+.. image:: https://travis-ci.org/eshta/object-graph-builder.svg?branch=master
+   :target: https://travis-ci.org/eshta/object-graph-builder
 
 
 
-Provides a multi-step dependency injection container builder to allow adding/recreating object graphs in different stages through an app lifecycle
+Provides a multi-step dependency injection container builder to allow adding/recreating object graphs in different stages through an app life-cycle
 
 Features
 --------
@@ -40,7 +40,9 @@ A Python 3.6+ interpreter is required in addition to pipenv.
 
 
     $ pipenv install --python 3.6 --dev
+
     $ pipenv shell
+
     $ pip install -e .
 
 
@@ -54,6 +56,6 @@ Now you're ready to run the tests:
 Resources
 ---------
 
-* `Documentation <https://django-pinject.readthedocs.io>`_
-* `Bug Tracker <https://github.com/eshta/django-pinject/issues>`_
-* `Code <https://github.com/eshta/django-pinject/>`_
+* `Documentation <https://object-graph-builder.readthedocs.io>`_
+* `Bug Tracker <https://github.com/eshta/object-graph-builder/issues>`_
+* `Code <https://github.com/eshta/object-graph-builder/>`_

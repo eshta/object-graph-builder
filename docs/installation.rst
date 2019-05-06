@@ -3,6 +3,6 @@ Installation
 
 * Install with pip::
 
-    pip install django-pinject
+    pip install object-graph-builder
 
 

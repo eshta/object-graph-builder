@@ -17,7 +17,6 @@ pytest-mypy = "*"
 docutils = "*"
 
 [packages]
-django = "*"
 pinject = "*"
 
 [requires]
