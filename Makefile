@@ -2,6 +2,8 @@
 
 VERSION = $(shell pipenv run python -c "print(__import__('object_graph').__version__)")
 
+export PIPENV_VENV_IN_PROJECT=1
+
 install-deps:
 	pipenv install
 
