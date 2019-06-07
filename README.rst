@@ -32,23 +32,21 @@ Requirements
 
 * Python 3.6+
 
+.. include:: docs/usage.rst
+
 Prepare for development
 -----------------------
 
 A Python 3.6+ interpreter is required in addition to pipenv.
 
+.. code-block:: bash
 
-
-    $ pipenv install --python 3.6 --dev
-
-    $ pipenv shell
-
-    $ pip install -e .
+    $ make init
 
 
 Now you're ready to run the tests:
 
-
+.. code-block:: bash
 
     $ make test
 
