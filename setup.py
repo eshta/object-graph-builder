@@ -25,7 +25,7 @@ setup(
     author='Omar Shaban',
     author_email='o.shaban.000@gmail.com',
     packages=find_packages(exclude=['tests', 'tests.*']),
-    install_requires=['pinject'],
+    install_requires=['decorator', 'pinject'],
     include_package_data=True,
     keywords='django pinject dependency-injection di container builder',
     classifiers=[
