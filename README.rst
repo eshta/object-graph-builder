@@ -32,8 +32,6 @@ Requirements
 
 * Python 3.6+
 
-Usage
------
 .. include:: docs/usage.rst
 
 Prepare for development
