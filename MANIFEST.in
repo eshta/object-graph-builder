@@ -1,3 +1,8 @@
+recursive-include object_graph *.py *.pyx *.pxd *.c
+recursive-include tests *.py
+recursive-include docs *.rst
 include LICENSE.rst
+include README.rst
+include setup.py
 recursive-exclude * .DS_Store
 recursive-exclude tests *
