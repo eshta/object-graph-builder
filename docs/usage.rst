@@ -1,5 +1,5 @@
 1. Framework Agnostic App
-======================
+=========================
 **In container.py**
 
 .. code-block:: python
@@ -46,7 +46,7 @@
 
 
 2. Django Example
-==============
+=================
 
 One can define the builder in your settings.py and then import it
 in each app and add the configurations you need
