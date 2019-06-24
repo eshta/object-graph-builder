@@ -39,4 +39,4 @@ release:
 	pipenv run python setup.py sdist
 	pipenv run twine check dist/*
 	pipenv run twine upload dist/*
-	git tag -a "${VERSION}" -m "Version ${VERSION}" && git push --follow-tags
+	git tag -a "${VERSION}" -m "Version ${VERSION}" && git push --tags 
