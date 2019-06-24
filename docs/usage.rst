@@ -6,14 +6,14 @@
 
   import object_graph.builder
 
-  object_graph_builder =  object_graph.builder.ObjectGraphBuilder()
+  builder =  object_graph.builder.ObjectGraphBuilder()
 
 
 **App 1**
 
 .. code-block:: python
 
-  from container import object_graph_builder
+  import container
   import pinject
 
 
@@ -25,22 +25,24 @@
 	   def configure(self, bind):
 		   bind('long_name', to_class=SomeReallyLongClassName)
 
-  object_graph_builder.addBindingSpec(MyBindingSpec)
+  container.builder.addBindingSpec(MyBindingSpec)
 
 **App 2**
 
 .. code-block:: python
 
-  from container import object_graph_builder
+  import container
 
 
-  object_graph_builder.addModules([app2.module1, app2.module2])
+  container.builder.addModules([app2.module1, app2.module2])
 
 **Client**
 
 .. code-block:: python
 
-  object_graph = object_graph_builder.get_object_graph()
+  import container
+
+  object_graph = container.builder.get_object_graph()
 
   my_service = object_graph.provide(MyService)
 
